@@ -26,7 +26,7 @@
             <p style="color: #CAC5C9;">.</p>
         </section>
     <footer>
-        <p>Desenvolvido por Sérgio Manoel</p>
+        <p>Desenvolvido por Sérgio Manoel B</p>
     </footer>
     
 </body>
