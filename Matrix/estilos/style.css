@@ -1,0 +1,19 @@
+div#dentro{
+    height: 300px;
+    width: 300px;
+    background-color: darkgray;
+    border-color: 2px solid black;
+    border-radius: 25px;
+}
+
+div#fora{
+    background-color: blue;
+    position: relative;
+    height: 96vh;
+}
+div#dentro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
