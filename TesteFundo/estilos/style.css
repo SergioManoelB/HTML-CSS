@@ -3,14 +3,14 @@ body{
     background-color: black;
     padding: 10px;
     background-image: url(../imagens/abstract-green-background-from-brilliant-mosaic-pattern-generative-ai.jpg);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 main{
     background-color: white;
-    padding: 25px;
-    width: 400px;
     margin: auto;
     border-radius: 25px;
     border-color: 2px solid green;
