@@ -1,0 +1,16 @@
+:root{
+    --cor0: #262626;
+    --cor1: #3D593C;
+    --cor2: #518C4F;
+    --cor3: #61BF5E;
+    --cor4: #6ED96A;
+}
+ol{
+    list-style-type: none;
+}
+ol ul{
+    display:none;
+}
+ol ul:hover{
+    display: block;
+}
