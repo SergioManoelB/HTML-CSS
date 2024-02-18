@@ -5,12 +5,3 @@
     --cor3: #61BF5E;
     --cor4: #6ED96A;
 }
-ol{
-    list-style-type: none;
-}
-ol ul{
-    display:none;
-}
-ol ul:hover{
-    display: block;
-}
