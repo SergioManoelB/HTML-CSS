@@ -5,3 +5,100 @@
     --cor3: #61BF5E;
     --cor4: #6ED96A;
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--cor0);
+}
+
+header{
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg, var(--cor1), var(--cor2));
+}
+
+header>h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav>ul{
+    list-style: none;
+}
+
+nav> ul> li> a{
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+
+nav> ul> li>a:hover{
+    padding: 5px;
+    text-decoration: underline;
+    background-color: var(--cor3);
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+nav> ul.nav_links>li{
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+a:hover{
+    padding: 5px;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+main.artigos{
+    height: 100vh;
+}
+
+div{
+    padding-left: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.normal{
+    background-color: white;
+}
+
+.imagem{
+    color: white;
+}
+
+.texto{
+    padding-left: 0%;
+    background-color: var(--cor0);
+}
+
+.topico{
+    margin: 5% 5%;
+    padding: 1% 1%;
+}
+
+footer{
+    padding: 1%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(90deg, var(--cor1), var(--cor2));
+}
