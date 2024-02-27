@@ -1,0 +1,32 @@
+table{
+    position: relative;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+caption{
+    background-color: lightgray;
+}
+
+thead{
+    top: -1px;
+    position: sticky; background-color: gray;
+}
+
+
+td,th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+tbody> tr:nth-child(2n){
+    background-color: lightgray;
+}
+
+td.number{
+    text-align: right;
+}
+
+tfoot> tr >th{
+    background-color: gray;
+}

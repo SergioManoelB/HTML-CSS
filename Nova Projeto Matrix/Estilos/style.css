@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Texto;
+    src: url(../Fontes/Texto.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Titulo;
+    src: url(../Fontes/Titulo.ttf) format(truetype);
+}
+
 :root{
     --cor0: #262626;
     --cor1: #3D593C;
@@ -31,7 +41,25 @@ header>h1{
     text-transform: uppercase;
 }
 
+.logo::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 110%;
+    background-color: var(--cor4);
+}
+
+.logo::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--cor4);
+}
+
 nav>ul{
+    display: inline-flex;
+    padding-left: 10%;
     list-style: none;
 }
 
@@ -57,7 +85,7 @@ nav> ul.nav_links>li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold
 }
 
@@ -67,12 +95,34 @@ a:hover{
     transition: 0.5s;
 }
 
+h1 h2{
+    display: inline-flex;
+    font-family: Titulo;
+}
+
+p{
+    font-family: Texto;
+}
+
+.borda::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--cor4);
+}
+
+ul{
+    font-family: Texto;
+}
+
 main.artigos{
     height: 100vh;
 }
 
 div{
-    padding-left: 10vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -82,23 +132,120 @@ div{
 }
 
 .imagem{
+    box-shadow: inset 5px 5px 6px rgba(0, 0, 0, 0.479);
     color: white;
 }
 
 .texto{
-    padding-left: 0%;
-    background-color: var(--cor0);
+    text-shadow: 1px  1px 2px rgba(0, 0, 0, 0.637);
+    text-align: justify;
+    padding: auto;
+    max-width: 80vh;
+    background-color: #262626c0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 25px;
+    border: 1px solid var(--cor4);
+}
+
+.texto>h1,h2{
+    padding-bottom:15px;
+}
+
+.texto>p{
+    text-indent: 15px;
+}
+.texto>ul{
+    padding-left:10%;
 }
 
 .topico{
-    margin: 5% 5%;
-    padding: 1% 1%;
+    color: white;
+    margin: 2%;
+    padding: 1%;
+    background-color: #262626c0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid var(--cor4);
+    text-shadow: 1px  1px 2px rgba(0, 0, 0, 0.637);
+    text-align: justify;
+}
+
+.dentro{
+    padding-top: 0%;
+    display: list-item;
+}
+.tamanho{
+    align-items: center;
+    width: auto;
+}
+.topico>h1{
+    padding-bottom: 10px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 15px;
+}
+
+div#img01{
+    background-image: url(../Imagens/Fundo\ principal\ -\ VerdeEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+div#img02{
+    background-image: url(../Imagens/Fundo\ tematico\ Linhas\ -\ verdeEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+div#img03{
+    background-image: url(../Imagens/vista-das-ruinas-arqueologicas-de-edificios-subaquaticosEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+div#img04{
+    background-image: url(../Imagens/ChoiceEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+div#img05{
+    background-image: url(../Imagens/Choice\ -\ redEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+div#img06{
+    background-image: url(../Imagens/Choice\ -\ BlueEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+div#img07{
+    box-shadow: inset 5px 5px 6px rgba(0, 0, 0, 0.479);
+    background-image: url(../Imagens/Fundo\ principal\ -\ VerdeEdited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
 }
 
 footer{
     padding: 1%;
-    font-weight: bold;
     color: white;
     text-align: center;
     background-image: linear-gradient(90deg, var(--cor1), var(--cor2));
+}
+
+footer>p{
+    text-align: center;
 }
