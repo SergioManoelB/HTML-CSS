@@ -104,14 +104,6 @@ p{
     font-family: Texto;
 }
 
-.borda::before{
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: var(--cor4);
-}
-
 ul{
     font-family: Texto;
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 02</title>
+</head>
+<body>
+    <h1>Formulário 02</h1>
+    <form action="Cadastro.php" method="get" autocomplete="on" >
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+            <fieldset>
+                <p>
+                    <label for="iname">Nome: </label>
+                    <input type="text" name="name" id="iname" required autocomplete="name" maxlength="40" size="15" placeholder="Nome Completo">
+                </p>
+                <p>
+                    <label for="idata">Data de nascimento: </label>
+                    <input type="date" name="data" id="idata" required autocomplete="bday">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <label for="isexmale">Masculino</label>
+                    <input type="radio" name="sex" id="isexmale" required>
+                    <label for="isexfem">Feminino</label>
+                    <input type="radio" name="sex" id="isexfem" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Contato</legend>
+                <p>
+                    <label for="iemail">Email: </label>
+                    <input type="email" required autocomplete="email" placeholder="exemplo@dominio.com">
+                </p>
+                <p>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel"  placeholder="(xx)xxxxx-xxxx">
+                </p>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Pesquisa</legend>
+            <fieldset>
+                <legend>Jogos Favoritos</legend>
+                <p>
+                    <label for="ilol">League of legends</label>
+                    <input type="checkbox" name="lol" id="ilol">
+                    <label for="itft">Teamfight tactics</label>
+                    <input type="checkbox" name="tft" id="itft">
+                    <label for="iwr">League of legends: Wild Rift</label>
+                    <input type="checkbox" name="wr" id="iwr">
+                </p>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Enviar Dados</legend>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

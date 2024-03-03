@@ -1,0 +1,28 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+menu{
+    display: none;
+}
+
+body{
+    line-height: 1.5em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2{
+    font-weight: bolder;
+}
+
+p{
+    text-indent: 15px;
+    margin: 20px;
+    text-align: justify;
+}
+
+article::after{
+    content: 'Este artigo foi escrito por sérgio manoel';
+}

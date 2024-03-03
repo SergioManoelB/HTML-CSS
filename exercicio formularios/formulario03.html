@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulário 03</title>
+</head>
+<body>
+    <h1>Formulário 03</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>listas</legend>
+            <p>
+                <label for="istate">Estado: </label>
+                <select name="state" id="istate">
+                    <optgroup label="####">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    <optgroup label="###">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="icolor">Cores</label>
+                <input type="text" name="color" id="icolor" list="lcolor">
+                <datalist id="lcolor">
+                    <optgroup label="####">
+                        <option >Azul</option>
+                        <option >Verde</option>
+                        <option >Vermelho</option>
+                    </optgroup>
+                    <optgroup label="####">
+                        <option >Azul</option>
+                        <option >Verde</option>
+                        <option >Vermelho</option>
+                    </optgroup>
+                </datalist>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
