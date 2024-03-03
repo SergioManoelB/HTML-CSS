@@ -1,0 +1,56 @@
+@media only print {
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    img#print{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tablet{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+    main{
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#pc{
+        display: block;
+    }
+    img#tablet{
+        display: none;
+    }
+    main{
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tv{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    main{
+        width: 70vw;
+    }
+}
