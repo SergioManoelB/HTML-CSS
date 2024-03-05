@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="media-queries.css">
     <title>Menu Responsivo</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <H1>Notícias</H1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <Menu id="itens">
             <ul>
                 <li><a href="#">Navegação</a></li>
                 <li><a href="#">Navegação</a></li>
@@ -17,24 +20,34 @@
                 <li><a href="#">Navegação</a></li>
                 <li><a href="#">Navegação</a></li>
             </ul>
-        </nav>
+        </Menu>
     </header>
     <main>
-        <section>
             <article>
                 <h1>Title</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores fugiat maxime sequi possimus! Excepturi vel nesciunt molestiae, reprehenderit, itaque dicta consectetur, aliquam ipsum id aspernatur officiis. Dolorem aliquid quas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe accusantium accusamus fugiat commodi aliquid explicabo animi eveniet, officia, doloremque assumenda veniam! Quas, ipsam? Ea harum excepturi quidem error asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, culpa qui laudantium ipsa laboriosam voluptate officiis odit sint voluptatibus magnam neque voluptas obcaecati reiciendis, nostrum tempore magni eum ut ipsam.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas expedita ipsa maxime at repellat ex nesciunt exercitationem alias tenetur et enim, tempore culpa cum quae eligendi minima corrupti iure! Odi</p>
-            </article>
-            <article>
-                <h1>Title</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores fugiat maxime sequi possimus! Excepturi vel nesciunt molestiae, reprehenderit, itaque dicta consectetur, aliquam ipsum id aspernatur officiis. Dolorem aliquid quas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe accusantium accusamus fugiat commodi aliquid explicabo animi eveniet, officia, doloremque assumenda veniam! Quas, ipsam? Ea harum excepturi quidem error asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, culpa qui laudantium ipsa laboriosam voluptate officiis odit sint voluptatibus magnam neque voluptas obcaecati reiciendis, nostrum tempore magni eum ut ipsam.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas expedita ipsa maxime at repellat ex nesciunt exercitationem alias tenetur et enim, tempore culpa cum quae eligendi minima corrupti iure! Odi</p>
+
             </article>
-        </section>
     </main>
-    <footer>
-        <p>Olá Sergio</p>
-    </footer>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {itens.style.display = 'block'
+        }
+    }
+    </script>
 </body>
 </html>

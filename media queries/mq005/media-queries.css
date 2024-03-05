@@ -1,0 +1,27 @@
+@media only screen and (min-width: 768px) {
+    i#burguer{
+        display: none;
+    }
+
+    menu#itens{
+        display: block;
+    }
+
+    menu>ul>li{
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+        border:  2px solid rgb(150, 148, 148);
+    }
+
+    menu>ul>li>a{
+        border-top: none;
+    }
+
+    header>menu{
+        border-bottom: none;
+    }
+
+    header>menu>ul>li>a{
+        border-top: none;
+    }
+}
